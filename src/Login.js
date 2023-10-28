@@ -10,6 +10,10 @@ const FormContainer = styled.div`
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
 `;
 
 const Form = styled.form`
@@ -60,7 +64,8 @@ const SignUpLink = styled.div`
   margin-top: 20px;
   text-align: center;
   font-size: 14px;
- color: #000;
+  color: #000;
+
   a {
     color: #3494e6;
     text-decoration: none;
@@ -70,8 +75,11 @@ const SignUpLink = styled.div`
       text-decoration: underline;
     }
   }
-`;
 
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
+`;
 
   const LoginForm = () => {
     return (
